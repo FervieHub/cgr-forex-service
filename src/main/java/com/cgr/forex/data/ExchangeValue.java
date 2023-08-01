@@ -12,7 +12,7 @@ public class ExchangeValue {
 	@Id
 	private Long id;
 	@Column(name = "currency_from")
-	private String from;
+	private String de;
 	@Column(name = "currency_to")
 	private String to;
 	private BigDecimal conversionMultiple;
@@ -23,11 +23,11 @@ public class ExchangeValue {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getFrom() {
-		return from;
+	public String getDe() {
+		return de;
 	}
-	public void setFrom(String from) {
-		this.from = from;
+	public void setFrom(String de) {
+		this.de = de;
 	}
 	public String getTo() {
 		return to;
@@ -51,17 +51,17 @@ public class ExchangeValue {
 	public ExchangeValue() {
 		// TODO Auto-generated constructor stub
 	}
-	public ExchangeValue(Long id, String from, String to, BigDecimal conversionMultiple, int port) {
+	public ExchangeValue(Long id, String de, String to, BigDecimal conversionMultiple, int port) {
 		super();
 		this.id = id;
-		this.from = from;
+		this.de = de;
 		this.to = to;
 		this.conversionMultiple = conversionMultiple;
 		this.port = port;
 	}
 	@Override
 	public String toString() {
-		return "ExchangeValue [id=" + id + ", from=" + from + ", to=" + to + ", conversionMultiple="
+		return "ExchangeValue [id=" + id + ", de=" + de + ", to=" + to + ", conversionMultiple="
 				+ conversionMultiple + ", port=" + port + "]";
 	}
 	

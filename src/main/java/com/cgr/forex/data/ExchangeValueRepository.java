@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface ExchangeValueRepository extends JpaRepository<ExchangeValue, Long> {
 
-	ExchangeValue findByFromAndTo(String from, String to);
+	ExchangeValue findByDeAndTo(String from, String to);
 	
 }
